@@ -1,6 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <style>
+        /* Basic styling to make it look clean */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center; /* Centers all the text */
+            padding: 20px;
+        }
+
+        /* This creates a flexible grid for your pictures */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows pictures to drop to the next line on small screens */
+            margin-bottom: 40px;
+        }
+
+        /* Styling for the individual picture boxes */
+        .picture-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        /* Ensures images fit perfectly inside their cards */
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Styling for the name under the picture */
+        .picture-name {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Styling for the video section */
+        .video-container {
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
 <body>
-  <h1>Title</h1>
+
+    <h1>Welcome to the Gallery</h1>
+    
+    <h2>Image Collection</h2>
+    
+    <div class="gallery">
+        
+        <div class="picture-card">
+            <img src="" alt="Placeholder Image">
+            <div class="picture-name">Name of Picture 1</div>
+        </div>
+
+        <div class="picture-card">
+            <img src="" alt="Placeholder Image">
+            <div class="picture-name">Name of Picture 2</div>
+        </div>
+
+        <div class="picture-card">
+            <img src="" alt="Placeholder Image">
+            <div class="picture-name">Name of Picture 3</div>
+        </div>
+
+    </div>
+
+    <h2>Featured Video</h2>
+    
+    <div class="video-container">
+        <iframe src="" allowfullscreen></iframe>
+    </div>
+
 </body>
 </html>
